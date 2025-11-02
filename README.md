@@ -1,4 +1,4 @@
-# CRaidVolume
+# Raid5Driver
 
 Software implementation of a **RAID 5 controller** in **C++14**, providing block-level read/write operations with resilience against single-disk failure. This project simulates RAID 5 functionality using provided disk I/O functions.
 
@@ -84,3 +84,4 @@ make clean    # Remove build artifacts
 * Parity is **evenly distributed** to balance I/O load
 * Degraded reads/writes are **automatically reconstructed using XOR parity**
 * Capacity is `(num_disks - 1) * (sectors_per_disk - 1)`
+
